@@ -1,0 +1,11 @@
+﻿客戶名稱,客戶統編,供應商名稱,供應商統編,聯絡人,電話,Email,銀行帳號,憑證號碼,憑證日期,收件日期,入帳月份,憑證類型,會計科目,幣別,未稅金額,稅額,含稅金額,課稅別,附件狀態,付款狀態,原憑證號碼,原憑證日期,備註,資料分類
+合成晨光維修有限公司,SYN-BUYER-C,合成方格文具行,SYN-SELLER-A,虛構黃助理,SYN-PHONE-C,huang@example.invalid,SYN-ACCOUNT-C,SYN-INV-0001,2026-10-06,2026-10-19,2026-10,發票,文具用品,TWD,3200,160,3360,應稅,齊全,未付款,,,例行月結；請聯絡虛構黃助理,一般帳務
+合成晨光維修有限公司,SYN-BUYER-C,合成雲端服務有限公司,SYN-SELLER-B,虛構黃助理,SYN-PHONE-C,huang@example.invalid,SYN-ACCOUNT-C,SYN-INV-0022,2026-10-07,2026-10-19,2026-10,折讓,專業服務費,TWD,-500,-25,-525,應稅,齊全,已付款,,,原憑證待補,一般帳務
+合成晨光維修有限公司,SYN-BUYER-C,合成東岸材料行,SYN-SELLER-C,虛構黃助理,SYN-PHONE-C,huang@example.invalid,SYN-ACCOUNT-C,SYN-INV-0023,2026-10-08,2026-10-01,2026-10,發票,進貨,TWD,19000,950,19950,應稅,齊全,未付款,,,例行月結；請聯絡虛構黃助理,一般帳務
+合成晨光維修有限公司,SYN-BUYER-C,合成捷達運輸行,SYN-SELLER-D,虛構黃助理,SYN-PHONE-C,huang@example.invalid,SYN-ACCOUNT-C,SYN-INV-0024,2026-10-09,2026-10-19,2026-10,發票,差旅費,TWD,0,0,0,應稅,齊全,未付款,,,資料已補齊,一般帳務
+合成晨光維修有限公司,SYN-BUYER-C,合成安信設備行,SYN-SELLER-E,虛構黃助理,SYN-PHONE-C,huang@example.invalid,SYN-ACCOUNT-C,SYN-INV-0025,2026-10-10,2026-10-19,2026-10,發票,設備,TWD,12400,0,12400,免稅,齊全,已付款,,,免稅項目待會計確認,一般帳務
+合成晨光維修有限公司,SYN-BUYER-C,合成方格文具行,SYN-SELLER-A,虛構黃助理,SYN-PHONE-C,huang@example.invalid,SYN-ACCOUNT-C,SYN-INV-0026,2026-10-11,2026-10-19,2026-11,發票,文具用品,TWD,5400,270,5670,應稅,齊全,未付款,,,跨月收到憑證,一般帳務
+合成晨光維修有限公司,SYN-BUYER-C,合成雲端服務有限公司,SYN-SELLER-B,虛構黃助理,SYN-PHONE-C,huang@example.invalid,SYN-ACCOUNT-C,SYN-INV-0027,2026-10-12,2026-10-19,2026-10,發票,專業服務費,TWD,-36000,-1800,-37800,應稅,齊全,未付款,,,例行月結；請聯絡虛構黃助理,一般帳務
+合成晨光維修有限公司,SYN-BUYER-C,合成東岸材料行,SYN-SELLER-C,虛構黃助理,SYN-PHONE-C,huang@example.invalid,SYN-ACCOUNT-C,SYN-INV-0028,2026-10-13,2026-10-19,2026-10,發票,進貨,TWD,2600,130,2730,應稅,齊全,已付款,,,請聯絡虛構黃助理；huang@example.invalid,一般帳務
+合成晨光維修有限公司,SYN-BUYER-C,合成捷達運輸行,SYN-SELLER-D,虛構黃助理,SYN-PHONE-C,huang@example.invalid,SYN-ACCOUNT-C,SYN-INV-0029,2026-10-14,2026-10-19,2026-10,發票,差旅費,TWD,14800,740,15540,應稅,齊全,未付款,,,合成健康資料：虛構體檢報告，僅供排除測試,健康
+合成晨光維修有限公司,SYN-BUYER-C,合成安信設備行,SYN-SELLER-E,虛構黃助理,SYN-PHONE-C,huang@example.invalid,SYN-ACCOUNT-C,SYN-INV-0030,2026-10-15,2026-10-19,2026-10,發票,設備,TWD,6700,335,7035,應稅,齊全,未付款,,,合成私人資料：虛構家庭支出，僅供排除測試,私人

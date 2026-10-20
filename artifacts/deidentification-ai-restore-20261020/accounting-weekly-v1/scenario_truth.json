@@ -1,0 +1,97 @@
+{
+  "synthetic": true,
+  "rows": 30,
+  "files": 3,
+  "columns": 25,
+  "examples": [
+    {
+      "file": 0,
+      "row": 2,
+      "expect": "DUPLICATE_VOUCHER"
+    },
+    {
+      "file": 0,
+      "row": 3,
+      "expect": "ATTACHMENT_REQUIRED"
+    },
+    {
+      "file": 0,
+      "row": 4,
+      "expect": "DOCUMENT_CONFLICT"
+    },
+    {
+      "file": 0,
+      "row": 4,
+      "expect": "MISSING_CATEGORY"
+    },
+    {
+      "file": 0,
+      "row": 5,
+      "expect": "AMOUNT_SUM_MISMATCH"
+    },
+    {
+      "file": 0,
+      "row": 6,
+      "expect": "CROSS_PERIOD"
+    },
+    {
+      "file": 0,
+      "row": 9,
+      "expect": "MISSING_TAX"
+    },
+    {
+      "file": 1,
+      "row": 9,
+      "expect": "CREDIT_REFERENCE_NOT_IN_BATCH"
+    },
+    {
+      "file": 2,
+      "row": 3,
+      "expect": "CREDIT_REFERENCE_INCOMPLETE"
+    },
+    {
+      "file": 2,
+      "row": 4,
+      "expect": "RECEIVED_BEFORE_ISSUE"
+    },
+    {
+      "file": 2,
+      "row": 7,
+      "expect": "OUTSIDE_REVIEW_PERIOD"
+    },
+    {
+      "file": 2,
+      "row": 8,
+      "expect": "NEGATIVE_AMOUNT_REVIEW"
+    }
+  ],
+  "privacy": [
+    {
+      "file": 1,
+      "row": 8,
+      "code": "FREE_TEXT_REVIEW"
+    },
+    {
+      "file": 2,
+      "row": 10,
+      "code": "LOCAL_ONLY"
+    },
+    {
+      "file": 2,
+      "row": 11,
+      "code": "LOCAL_ONLY"
+    }
+  ],
+  "valid_credit": {
+    "file": 1,
+    "row": 4
+  },
+  "different_buyer_same_number": {
+    "file": 2,
+    "row": 2
+  },
+  "zero_amount": {
+    "file": 2,
+    "row": 5
+  }
+}

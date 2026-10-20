@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-{{CSP_HASH}}'; style-src 'unsafe-inline'; connect-src 'none'; img-src data:; base-uri 'none'; form-action 'none'">
+<title>會計憑證｜去敏與 AI 結果還原</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f6f9;color:#19394b;font:16px/1.65 system-ui,"Microsoft JhengHei",sans-serif}
+main{max-width:1260px;margin:auto;padding:28px 22px}h1{font-size:28px;margin:4px 0}h2{font-size:21px;margin:0 0 14px}p{margin:9px 0}
+.eyebrow{color:#16705b;font-weight:700}.card{background:white;padding:22px;border:1px solid #d3dfe7;border-radius:12px;margin-top:20px}
+.actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}button,.file-picker{font:inherit;border:1px solid #9bb4c4;border-radius:7px;padding:10px 15px;background:white;color:#19394b;max-width:100%}
+button{cursor:pointer}button.primary{background:#116752;color:white;border-color:#116752}button:disabled{opacity:.5;cursor:default}
+.file-picker{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:48px;cursor:pointer;text-align:center}
+.file-picker input[type=file]{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);clip-path:inset(50%);white-space:nowrap;border:0}
+.file-picker:hover{background:#edf4f1}.file-picker:focus-within{outline:3px solid #16705b;outline-offset:3px}
+.file-picker:has(input:disabled){opacity:.5;cursor:default;background:white}
+#status{background:#e6f1ed;padding:12px 16px;border-left:4px solid #117254;margin:16px 0;overflow-wrap:anywhere}
+.muted{color:#526c7b;font-size:14px}.warning{color:#844600;background:#fff7e8;padding:12px;border-radius:6px}
+.scroll{overflow:auto;max-height:480px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:9px 10px;border-bottom:1px solid #dce5eb;text-align:left;vertical-align:top;white-space:pre-wrap;overflow-wrap:anywhere;min-width:80px}th{background:#eaf0f5;position:sticky;top:0}
+td.changed{background:#fff2cd}select{font:inherit;max-width:100%;padding:7px}a{color:#116752}.hidden{display:none}summary{cursor:pointer;font-weight:bold}
+@media(max-width:600px){main{padding:16px 10px}.card{padding:14px}.file-picker,button{width:100%}h1{font-size:24px}}
+</style></head><body><main>
+<div class="eyebrow">資料只在這台電腦處理</div>
+<h1>資料去敏與還原</h1>
+<p>先將公司、人員等資料換成代號；AI 整理完成後，再把代號換回原值。原始檔案不會被改動。</p>
+<div id="status" role="status">程式尚未啟動；請用 Chrome 開啟這份 HTML。</div>
+<section class="card"><h2>1　選擇要去敏的資料</h2>
+<div class="actions"><label class="file-picker"><input id="files" type="file" accept=".csv" multiple disabled aria-label="選擇資料檔案" aria-describedby="selection"><span>選擇資料檔案</span></label>
+<button id="demo" disabled>用範例試試</button>
+<button id="reset" disabled>清空本頁</button></div>
+<p class="muted">支援 CSV，可一次選多個檔案。範例為 30 筆虛構資料。</p>
+<p id="selection" aria-live="polite">尚未載入。</p>
+<div class="actions"><button id="run" class="primary" disabled>產生去敏資料</button><button id="originals" disabled>另存原始檔案</button></div>
+</section>
+<section id="results" class="card hidden"><h2>2　儲存這兩份檔案</h2><p id="summary"></p>
+<p class="warning"><strong>關閉頁面前，請把「去敏資料」和「還原檔」都存好，放在同一個資料夾。</strong>還原檔記錄代號與原值的對應，之後還原一定需要；只有原始檔或去敏資料，無法完成這次還原。</p>
+<div class="actions"><button id="ai-download" class="primary" disabled>儲存去敏資料</button><button id="map-download" disabled>儲存還原檔</button></div>
+<p id="save-status" class="muted" aria-live="polite"></p>
+<p>將去敏資料解壓縮後，把裡面的資料和「AI操作說明」交給 AI。<strong>還原檔含原始敏感資料，請留在自己的電腦，不要交給 AI。</strong></p>
+<p class="muted">請 AI 回傳 CSV，保留每列的「批次編號」與完整代號。合併多個對象時，需保留所有代號，例如「公司-001；公司-002」。</p>
+</section>
+<section class="card"><h2>3　將 AI 結果還原</h2>
+<ol>
+<li>選擇當時儲存的<strong>還原檔</strong>。若本頁剛完成去敏，會自動使用本次對應資料；重新開啟頁面後，需自行選檔，不必重做去敏。</li>
+<li>選擇 AI 整理完成的<strong>結果檔案（CSV）</strong>，不是原始檔或先前的去敏資料。</li>
+<li>按「還原資料」。系統先核對是否同一批資料，再把完整代號換回原值；AI 合併、刪改後的資料列與計算結果會保留。</li>
+<li>查看下方還原結果與待確認內容，再按「儲存還原結果」，另存為新檔。</li>
+</ol>
+<div class="actions"><label class="file-picker"><input id="restore-map-file" type="file" accept=".json,application/json" disabled aria-label="選擇還原檔" aria-describedby="restore-map-status"><span>選擇還原檔</span></label>
+<label class="file-picker"><input id="ai-file" type="file" accept=".csv,text/csv" disabled aria-label="選擇 AI 結果檔案" aria-describedby="ai-file-status"><span>選擇 AI 結果檔案</span></label></div>
+<p id="restore-map-status" class="muted">尚未選取還原檔。</p><p id="ai-file-status" class="muted">尚未選取 AI 結果。</p>
+<div class="actions"><button id="restore-run" class="primary" disabled>還原資料</button><button id="restored-download" disabled>儲存還原結果</button></div>
+<p id="restore-summary" role="status">尚未還原。</p>
+<p class="muted">被刪除的代號無法推回原對象；找不到的代號、遮蔽文字與待確認標記會保持原樣。已刪除的資料列不會補回。</p>
+<div id="restore-output" class="hidden"><div class="scroll"><table><thead><tr><th>結果列</th><th>結果欄名</th><th>AI 回傳值</th><th>還原後原值</th></tr></thead><tbody id="restore-preview"></tbody></table></div>
+<p class="muted">黃色為已還原的格子。未知代號與待覆核標記保留原樣；代號被刪除時，無法推回原對象。</p>
+<div class="scroll"><table><thead><tr><th>結果列</th><th>欄名</th><th>待確認內容</th><th>原因</th></tr></thead><tbody id="restore-warnings"></tbody></table></div></div>
+</section>
+<p class="muted">本頁不會自動傳送資料給 AI。原始檔案保持不變，去敏資料和還原結果都另存新檔。</p>
+</main><script>{{SCRIPT}}</script></body></html>

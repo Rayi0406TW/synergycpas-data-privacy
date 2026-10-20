@@ -1,0 +1,26 @@
+# Track only the current sample project and its intake documents.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/artifacts/
+/artifacts/*
+!/artifacts/deidentification-ai-restore-20261020/
+!/artifacts/customer-intake-guides-20261020/
+
+# Generated outputs and local restoration data are not shared.
+**/runs/
+**/test_runs/
+**/PRIVATE/
+**/local_private/
+**/node_modules/
+**/__pycache__/
+*.zip
+*.log
+.env*
+*.pem
+*.key
+**/identity_map.json
+**/cell_changes.json
+**/還原檔_*
+**/*_已還原.csv

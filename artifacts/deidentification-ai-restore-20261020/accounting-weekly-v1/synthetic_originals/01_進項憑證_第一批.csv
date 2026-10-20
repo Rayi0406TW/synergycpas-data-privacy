@@ -1,0 +1,11 @@
+﻿客戶名稱,客戶統編,供應商名稱,供應商統編,聯絡人,電話,Email,銀行帳號,憑證號碼,憑證日期,收件日期,入帳月份,憑證類型,會計科目,幣別,未稅金額,稅額,含稅金額,課稅別,附件狀態,付款狀態,原憑證號碼,原憑證日期,備註,資料分類
+合成青禾設計有限公司,SYN-BUYER-A,合成方格文具行,SYN-SELLER-A,虛構林會計,SYN-PHONE-A,lin@example.invalid,SYN-ACCOUNT-A,SYN-INV-0001,2026-10-01,2026-10-19,2026-10,發票,文具用品,TWD,12500,625,13125,應稅,齊全,已付款,,,例行月結；請聯絡虛構林會計,一般帳務
+合成青禾設計有限公司,SYN-BUYER-A,合成雲端服務有限公司,SYN-SELLER-B,虛構林會計,SYN-PHONE-A,lin@example.invalid,SYN-ACCOUNT-A,SYN-INV-0002,2026-10-02,2026-10-19,2026-10,發票,專業服務費,TWD,890,45,935,應稅,缺發票影本,未付款,,,發票影本待補,一般帳務
+合成青禾設計有限公司,SYN-BUYER-A,合成東岸材料行,SYN-SELLER-C,虛構林會計,SYN-PHONE-A,lin@example.invalid,SYN-ACCOUNT-A,SYN-INV-0003,2026-10-03,2026-10-19,2026-10,發票,,TWD,48000,2400,50400,應稅,齊全,未付款,,,科目待確認,一般帳務
+合成青禾設計有限公司,SYN-BUYER-A,合成捷達運輸行,SYN-SELLER-D,虛構林會計,SYN-PHONE-A,lin@example.invalid,SYN-ACCOUNT-A,SYN-INV-0004,2026-10-04,2026-10-19,2026-10,發票,差旅費,TWD,3600,180,3781,應稅,齊全,已付款,,,同號金額待核,一般帳務
+合成青禾設計有限公司,SYN-BUYER-A,合成安信設備行,SYN-SELLER-E,虛構林會計,SYN-PHONE-A,lin@example.invalid,SYN-ACCOUNT-A,SYN-INV-0005,2026-09-30,2026-10-19,2026-10,發票,設備,TWD,24000,1200,25200,應稅,齊全,未付款,,,跨月收到憑證,一般帳務
+合成青禾設計有限公司,SYN-BUYER-A,合成方格文具行,SYN-SELLER-A,虛構林會計,SYN-PHONE-A,lin@example.invalid,SYN-ACCOUNT-A,SYN-INV-0006,2026-10-06,2026-10-19,2026-10,收據,文具用品,TWD,720,0,720,免稅,齊全,未付款,,,收據無稅額,一般帳務
+合成青禾設計有限公司,SYN-BUYER-A,合成雲端服務有限公司,SYN-SELLER-B,虛構林會計,SYN-PHONE-A,lin@example.invalid,SYN-ACCOUNT-A,SYN-INV-0007,2026-10-07,2026-10-19,2026-10,發票,專業服務費,TWD,18600,930,19530,應稅,缺驗收單,已付款,,,驗收單待補,一般帳務
+合成青禾設計有限公司,SYN-BUYER-A,合成東岸材料行,SYN-SELLER-C,虛構林會計,SYN-PHONE-A,lin@example.invalid,SYN-ACCOUNT-A,SYN-INV-0008,2026-10-08,2026-10-19,2026-10,發票,進貨,TWD,5600,,,應稅,齊全,未付款,,,科目待確認,一般帳務
+合成青禾設計有限公司,SYN-BUYER-A,合成捷達運輸行,SYN-SELLER-D,虛構林會計,SYN-PHONE-A,lin@example.invalid,SYN-ACCOUNT-A,SYN-INV-0009,2026-10-09,2026-10-19,2026-10,發票,差旅費,USD,128.75,0,128.75,待確認,齊全,未付款,,,外幣原幣金額,一般帳務
+合成青禾設計有限公司,SYN-BUYER-A,合成方格文具行,SYN-SELLER-A,虛構林會計,SYN-PHONE-A,lin@example.invalid,SYN-ACCOUNT-A,SYN-INV-0001,2026-10-01,2026-10-19,2026-10,發票,文具用品,TWD,12500,625,13125,應稅,齊全,已付款,,,收到重複掃描件,一般帳務

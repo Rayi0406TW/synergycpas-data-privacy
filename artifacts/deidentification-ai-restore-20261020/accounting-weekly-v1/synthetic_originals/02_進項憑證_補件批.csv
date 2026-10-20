@@ -1,0 +1,11 @@
+﻿單據號碼,開立日期,收到日期,帳務月份,單據類型,費用科目,交易幣別,銷售額,營業稅額,總額,委託客戶,買方統編,交易對象,賣方統編,經辦人,聯絡電話,電子信箱,付款帳戶,稅別,憑證附件,支付狀態,折讓原單號,折讓原單日期,處理說明,保密分類
+SYN-INV-0001,2026-10-01,2026-10-20,2026-10,發票,文具用品,TWD,12500,625,13125,合成青禾設計有限公司,SYN-BUYER-A,合成方格文具行,SYN-SELLER-A,虛構林會計,SYN-PHONE-A,lin@example.invalid,SYN-ACCOUNT-A,應稅,齊全,已付款,,,收到重複掃描件,一般帳務
+SYN-INV-0003,2026-10-03,2026-10-19,2026-10,發票,,TWD,48100,2405,50505,合成青禾設計有限公司,SYN-BUYER-A,合成東岸材料行,SYN-SELLER-C,虛構林會計,SYN-PHONE-A,lin@example.invalid,SYN-ACCOUNT-A,應稅,齊全,未付款,,,同號金額待核,一般帳務
+SYN-INV-0013,2026-10-16,2026-10-19,2026-10,折讓,進貨,TWD,-1600,-80,-1680,合成海嶼商貿有限公司,SYN-BUYER-B,合成安信設備行,SYN-SELLER-E,虛構陳專員,SYN-PHONE-B,chen@example.invalid,SYN-ACCOUNT-B,應稅,齊全,已付款,SYN-INV-0015,2026-10-15,退回兩件商品,一般帳務
+SYN-INV-0014,2026-10-14,2026-10-19,2026-10,發票,差旅費,TWD,960,48,1008,合成海嶼商貿有限公司,SYN-BUYER-B,合成捷達運輸行,SYN-SELLER-D,虛構陳專員,SYN-PHONE-B,chen@example.invalid,SYN-ACCOUNT-B,應稅,缺付款證明,未付款,,,付款證明待補,一般帳務
+SYN-INV-0015,2026-10-15,2026-10-19,2026-10,發票,設備,TWD,32000,1600,33600,合成海嶼商貿有限公司,SYN-BUYER-B,合成安信設備行,SYN-SELLER-E,虛構陳專員,SYN-PHONE-B,chen@example.invalid,SYN-ACCOUNT-B,應稅,齊全,未付款,,,例行月結；請聯絡虛構陳專員,一般帳務
+SYN-INV-0016,2026-10-01,2026-10-19,2026-10,發票,文具用品,TWD,6800,340,7140,合成海嶼商貿有限公司,SYN-BUYER-B,合成方格文具行,SYN-SELLER-A,虛構陳專員,SYN-PHONE-B,chen@example.invalid,SYN-ACCOUNT-B,應稅,齊全,已付款,,,請聯絡虛構陳專員；帳號核對：SYN-ACCOUNT-B,一般帳務
+SYN-INV-0017,2026-10-02,2026-10-19,2026-10,發票,專業服務費,TWD,4500,225,4725,合成海嶼商貿有限公司,SYN-BUYER-B,合成雲端服務有限公司,SYN-SELLER-B,虛構陳專員,SYN-PHONE-B,chen@example.invalid,SYN-ACCOUNT-B,應稅,齊全,未付款,,,收件窗口為虛構郭經理，分機 SYN-EXT-88，請週三下午回電,一般帳務
+SYN-INV-0018,2026-10-03,2026-10-19,2026-10,折讓,進貨,TWD,-200,-10,-210,合成海嶼商貿有限公司,SYN-BUYER-B,合成東岸材料行,SYN-SELLER-C,虛構陳專員,SYN-PHONE-B,chen@example.invalid,SYN-ACCOUNT-B,應稅,齊全,未付款,SYN-INV-NOT-IN-BATCH,2026-09-01,原憑證待補,一般帳務
+SYN-INV-0019,2026-10-04,2026-10-19,2026-10,發票,差旅費,TWD,7500,375,7875,合成海嶼商貿有限公司,SYN-BUYER-B,合成捷達運輸行,SYN-SELLER-D,虛構陳專員,SYN-PHONE-B,chen@example.invalid,SYN-ACCOUNT-B,應稅,齊全,,,,付款證明待補,一般帳務
+SYN-INV-0020,2026-10-05,2026-10-19,2026-10,發票,設備,TWD,22400,1120,23520,合成海嶼商貿有限公司（採購部）,SYN-BUYER-B,合成安信設備行,SYN-SELLER-E,虛構陳專員,SYN-PHONE-B,chen@example.invalid,SYN-ACCOUNT-B,應稅,齊全,未付款,,,核對買方資料,一般帳務
